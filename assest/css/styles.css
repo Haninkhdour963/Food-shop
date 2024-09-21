@@ -1,0 +1,159 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Light background for better contrast */
+}
+
+.header {
+    background-color: #333; /* Dark background for the header */
+    color: white;
+    padding: 15px 0;
+   
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    justify-content: center;
+    
+}
+
+.logo {
+    width: 100px; 
+    justify-content: left;
+    
+
+    
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+   
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background 0.3s; 
+}
+
+.nav a:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+.hero {
+    background-image: url('/assest/images/bg.png'); 
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#ff6347;
+    text-align: center;
+    font-size: larger;
+    
+}
+
+.hero-content h1 {
+    font-size: 2.5rem; 
+}
+
+.order-btn {
+    background: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition:  0.3s; 
+}
+
+.order-btn:hover {
+    background: #ff4500; 
+
+}
+
+.cards-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+
+ .prices  {
+    grid: 1;
+    padding: 10px;
+    margin-left: 0 10px; 
+justify-content: center ;  
+background-image: url('/assest/images/bg.png'); 
+background-size: 100% 100%;
+width: 300px;
+height: 300px;     
+}
+.specials{
+   grid: 1;
+
+    padding: 10px;
+    margin-left: 10px; 
+justify-content: center ;  
+background-image: url('/assest/images/bg.png'); 
+background-size: 100% 100%;
+width: 300px;
+height: 300px; 
+
+}
+
+.featured {
+    text-align: center;
+    padding: 20px;
+    margin-top: 4px;
+   justify-content: center;
+   
+}
+
+.featured-card {
+   
+    margin: 10px;
+    padding: 20px;
+    display:inline-block;
+   
+    border-radius: 10px;
+    background-image: url('/assest/images/bg.png'); 
+    background-size: 100% 100%;
+    width: 300px;
+    height: 300px;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+   
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .hero-content h1 {
+        font-size: 2rem; 
+}}
